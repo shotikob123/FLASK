@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Worksheet</title>
+    <link href="../static/css/about.css" rel="stylesheet" />
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/mainpage.css') }}">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div id="container">
+      <div id="titleContainer">
+        <div id="title1">
+          About Us
+        </div>
+        <div id="text1">
+          This project was made for python quiz, hope you enjoy it
+        </div>
+        <a id="button1" href="/register", style="text-decoration: none">Join Us</a>
+      </div>
+    </div>
+
+    <div id="navigation">
+      <a id="title" href="/" style="text-decoration:none">MovieLand</a>
+      <div id="navelements">
+        <a class="navelement" href="/random" style="text-decoration:none">Movies</a>
+        <a class="navelement" href="/about" style="text-decoration:none">About</a>
+        <a class="navelement" href="/series" style="text-decoration:none">Series</a>
+      </div>
+      <a id="loginButton" href="/login" style="text-decoration: none">Login</a>
+    </div>
+
+    <div id="container2">
+      <div id="title2">
+        You May Like
+      </div>
+      <div id="imageContainer">
+        <div class="image" style="background-image: url('../static/imgs/bastards.jpg');" >
+            <div class="imageTexts" >
+
+              <div class="imageText2"></div>
+            </div>
+        </div>
+        <div class="image" style="background-image: url('../static/imgs/bop.jpg');">
+            <div class="imageTexts" >
+
+              <div class="imageText2"></div>
+            </div>
+        </div>
+        <div class="image" style="background-image: url('../static/imgs/inception.jpg');">
+            <div class="imageTexts">
+
+              <div class="imageText2"></div>
+            </div>
+        </div>
+        <div class="image" style="background-image: url('../static/imgs/godfather.jpg');">
+            <div class="imageTexts" >
+
+              <div class="imageText2"></div>
+            </div>
+        </div>
+        <div class="image" style="background-image: url('../static/imgs/interstellar.jpg');">
+            <div class="imageTexts">
+
+              <div class="imageText2"></div>
+            </div>
+        </div>
+        <div class="image" style="background-image: url('../static/imgs/fury.jpg');">
+            <div class="imageTexts">
+
+              <div class="imageText2">  </div>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>

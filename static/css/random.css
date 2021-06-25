@@ -1,0 +1,128 @@
+body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+
+}
+#container{
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+
+}
+.title{
+  color: azure;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  bottom: 15%;
+  left: 5%;
+  position: absolute;
+  text-shadow: 5px 5px 7px #000000c9;
+
+
+}
+#button1 {
+  background-color: #ff5108;
+  border-style: none;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  color: azure;
+  font-weight: 100;
+  padding: 25px;
+  padding-left: 35px;
+  padding-right: 35px;
+  transition: all 0.3s;
+  margin: 0;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+}
+.photocontainer{
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../sahara.jpg");
+  flex-shrink: 0;
+  transition: all 0.3s;
+  background-size: cover;
+  position: relative;
+}
+
+
+
+#navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80vw;
+  height: 50px;
+  position: fixed;
+  top: 10px;
+  left: 10vw;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+
+#title {
+  color: azure;
+  font-size: 40px;
+  cursor: pointer;
+  transition: all 0.3s;
+  text-shadow: 4px 3px 7px #000000c9;
+}
+#title:hover {
+  transform: scale(1.03);
+  text-shadow: 4px 3px 7px #000000c9;
+}
+
+#navelements {
+  display: flex;
+  width: 40%;
+  justify-content: space-evenly;
+}
+
+.navelement {
+  color: white;
+  transition: all 0.3s;
+  font-weight: 300;
+  text-shadow: 4px 3px 7px #000000c9;
+}
+.navelement:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+#loginButton {
+  font-size: 20px;
+  color: azure;
+  background-color: rgba(240, 255, 255, 0.288);
+  padding: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-style: solid;
+  border-width: 1px;
+  transition: all 0.3s;
+  font-weight: 300;
+  text-shadow: 4px 3px 7px #000000c9;
+}
+
+#loginButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 0px 7px 0px #00000073;
+  cursor: pointer;
+}
+
+#button1:hover{
+  box-shadow: 4px 3px 7px #000000c9;
+  cursor: pointer;
+
+}
+

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/register.css') }}">
+
+</head>
+<body>
+  <div id="navigation">
+    <a id="title" href="/" style="text-decoration:none">Home</a>
+  </div>
+  <div class="wrapper">
+
+    <h1>Sign Up</h1>
+    <form method="post">
+      <input type="text" placeholder="Username" name="name">
+      <input type="password" placeholder="Password" name="password">
+      <input type="submit" value="REGISTER">
+    </form>
+    <div class="bottom-text">
+      <input type="checkbox" name="remember" checked="checked"> Remember me
+      <a href="/login">Already Have an Account? </a>
+      {% for mesg in get_flashed_messages() %}
+      <p>{{ mesg }}</p>
+      {% endfor %}
+    </div>
+
+    <div class="socials">
+      <a href="#"><i class="fa fa-facebook"></i></a>
+      <a href="#"><i class="fa fa-twitter"></i></a>
+      <a href="#"><i class="fa fa-pinterest"></i></a>
+      <a href="#"><i class="fa fa-linkedin"></i></a>
+
+    </div>
+  </div>
+  <div id="overlay-area"></div>
+</body>
+</html>
+
